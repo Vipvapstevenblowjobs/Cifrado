@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Viggenere</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="viggener"></script>
+        <script src="viggener.js"></script>
+  </head>
+<body>
+  <h1>Cifrado de Vigenere</h1>
+</header>
+<main>
+  <h2>Cifrar</h2>
+  <form class="form-inline" method="get" onsubmit="cifrar()">
+    <label>Mensaje
+      <input id="mensaje" class="form-control" type="text" pattern="[A-Z]+" placeholder="Introduce el mensaje..." autofocus required>
+    
+    </label>
+    <label>Clave
+      <input id="clave" class="form-control" type="text" pattern="[A-Z]+" placeholder="Introduce la clave..." required>
+     
+    </label>
+    <input type="submit" class="btn btn-default" value="Cifrar">
+  </form>
+  <div id="resultado1" class="resultado"></div>
+  <br /><br /><br />
+  <h2>Descifrar</h2>
+  <form method="get" class="form-inline" action="descifrar()">
+    <label>Mensaje cifrado
+      <input id="mensaje_cif" class="form-control" type="text" pattern="[A-Z]+" placeholder="Introduce el mensaje..." autofocus required>
+    
+    <label>Clave
+      <input id="clave2" class="form-control" type="text" pattern="[A-Z]+" placeholder="Introduce la clave..." required>
+ 
+    </label>
+    <input type="submit" class="btn btn-default" onclick="descifrar()" value="Descifrar">
+  </form>
+  <div id="resultado2" class="resultado"></div>
+</main>
+
+<footer>
+  <ul>
+   
+  </ul>
+</footer>
